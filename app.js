@@ -7,8 +7,6 @@ const stuffRoutes = require('./routes/stuff');
 const userRoutes = require('./routes/user');
 const path = require('path');
 
-const Thing = require('./models/thing');
-
 mongoose.connect(url,
   { useNewUrlParser: true,
     useUnifiedTopology: true })
@@ -25,7 +23,6 @@ app.use((req, res, next) => {
 });
 
 app.use('/images', express.static(path.join(__dirname, 'images')));
-
 app.use('/api/stuff', stuffRoutes);
 app.use('/api/auth', userRoutes);
 

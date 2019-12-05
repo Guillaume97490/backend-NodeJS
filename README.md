@@ -1,2 +1,5 @@
 # backend-NodeJS
-backend Node.Js
+
+- API REST avec Node js, Express et mongoDB
+- Mise place d'un système d'authentification
+- Géstion des fichiers utilisateurs
