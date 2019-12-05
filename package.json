@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --delay 0.3 server.js -e ejs,js,json",
+    "stop": "lsof -ti :3000 | xargs kill"
+  },
+  "author": "Guillaume",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
